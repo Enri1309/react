@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toback Microhedging Dashboard</title>
+    
+    <!-- Importa React -->
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    
+    <!-- Importa Babel per JSX -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <!-- Importa librerie necessarie -->
+    <script src="https://unpkg.com/recharts@2.1.9/umd/Recharts.js"></script>
+    <script src="https://unpkg.com/mathjs@10.0.0/lib/browser/math.js"></script>
+    
+    <!-- Importa Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <!-- Il dashboard component -->
+    <script type="text/babel" src="dashboard.js"></script>
+    
+    <!-- Script per renderizzare la dashboard -->
+    <script type="text/babel">
+        ReactDOM.render(<TobackMicrohedgingDashboard />, document.getElementById('root'));
+    </script>
+</body>
+</html>
